@@ -25,4 +25,13 @@ class DefaultController extends Controller
         // replace this example code with whatever you need
         return $this->render('default/custom.html.twig');
     }
+
+    /**
+     * @Route("/log", name="log")
+     */
+    public function loginAction(Request $request)
+    {
+        // replace this example code with whatever you need
+        return $this->render('default/login.html.twig');
+    }
 }
