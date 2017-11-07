@@ -9,26 +9,29 @@
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span><i class="fa fa-bars"></i>
             </button>
-            <a class="navbar-brand page-scroll" href="#page-top"><img src="images/logo.png" class="img-responsive"></a>
+            <a class="navbar-brand page-scroll" href="{{ path('homepage') }}#page-top"><img src="images/logo.png" class="img-responsive"></a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a class="page-scroll" href="#page-top">Home</a>
+                    <a class="page-scroll" href="{{ path("homepage") }}">Home</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#about">About us</a>
+                    <a class="page-scroll" href="{{ path('homepage') }}#about">About us</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#buyrate">Buying Rate</a>
+                    <a class="page-scroll" href="{{ path('homepage') }}#buyrate">Buying Rate</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#sellrate">Selling Rate</a>
+                    <a class="page-scroll" href="{{ path('homepage') }}#sellrate">Selling Rate</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#contact">Contact us</a>
+                    <a class="page-scroll" href="{{ path('homepage') }}#contact">Contact us</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="{{ path("custom") }}">Custom</a>
                 </li>
             </ul>
         </div>

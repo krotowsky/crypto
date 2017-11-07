@@ -16,4 +16,13 @@ class DefaultController extends Controller
         // replace this example code with whatever you need
         return $this->render('default/content.html.twig');
     }
+
+    /**
+     * @Route("/custom", name="custom")
+     */
+    public function customAction(Request $request)
+    {
+        // replace this example code with whatever you need
+        return $this->render('default/custom.html.twig');
+    }
 }
