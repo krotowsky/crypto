@@ -1,4 +1,6 @@
 imports:
+    - { resource: 'parameters.yml' }
+    - { resource: '/etc/sites/crypto/parameters.yml', ignore_errors: true }
     - { resource: parameters.yml }
     - { resource: security.yml }
     - { resource: services.yml }
